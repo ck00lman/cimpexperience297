@@ -133,6 +133,133 @@ i.fas.fa-tags {
 
 /* ===== ===== End About Page Fontawesome Icon Color ===== =====*/
 
+/* ===== ===== Start Pricing Page Source Code ===== =====*/
+
+* {
+    box-sizing: border-box;
+    padding-bottom: 0px;
+  }
+  .jumbotron {
+    padding-right: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .h2, h2 {
+      margin-top: 3.5rem!important; /* Specification of exact screen position*/
+  }
+
+  .columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header1 {
+    background-color: #0fb7ca;
+    color: white;
+    font-size: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .price .header2 {
+    background: -moz-linear-gradient(left, #0fb7ca 42%, #FBB03B 82%); 
+    background: -webkit-linear-gradient(left, #0fb7ca 42%, #FBB03B 82%);
+    background: linear-gradient(to right, #0fb7ca 42%, #FBB03B 82%);
+    color: white;
+    font-size: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .price .header3 {
+    background-color: #FBB03B;
+    color: white;
+    font-size: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .button1 {
+    background-color: #0fb7ca;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .button2 {
+    background: -moz-linear-gradient(left, #0fb7ca 32%, #FBB03B 82%); 
+    background: -webkit-linear-gradient(left, #0fb7ca 32%, #FBB03B 82%);
+    background: linear-gradient(to right, #0fb7ca 32%, #FBB03B 82%);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .button3 {
+    background-color: #FBB03B;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .fas.fa-check {
+      color: #04b12f;
+  }
+
+  .fas.fa-asterisk {
+    color: #FBB03B;
+}
+
+.fas.fa-times {
+    color: #df0202;
+}
+
+
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+
+/* ===== ===== End Pricing Page Source Code ===== =====*/
 
 
 
@@ -142,7 +269,7 @@ i.fas.fa-tags {
         top: 40%;
     }
     .subtitle h1 {
-        font-size: 2.1rem;
+        font-size: 2.3rem;
     }
     .subtitle h3 {
         font-size: 1.6rem;
@@ -154,7 +281,7 @@ i.fas.fa-tags {
         top: 40%;
     }
     .subtitle h1 {
-        font-size: 1.7rem;
+        font-size: 2.0rem;
     }
     .subtitle h3 {
         font-size: 1.2rem;
@@ -167,7 +294,7 @@ i.fas.fa-tags {
         top: 40%;
     }
     .subtitle h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .subtitle h3 {
         font-size: 1.0rem;
@@ -180,7 +307,7 @@ i.fas.fa-tags {
         top: 40%;
     }
     .subtitle h1 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     .subtitle h3 {
         font-size: .9rem;
