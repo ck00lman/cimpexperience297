@@ -8,7 +8,7 @@ html {
 /* Body Font Refrence https://fonts.google.com/?sort=popularity&selection.family=Montserrat*/
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #0fb7ca
+    color: #353838
 }
 
 .navbar-brand img {
@@ -18,6 +18,7 @@ body {
     padding: .6rem 1rem;
     letter-spacing: .05rem;
     font-size:.8rem;
+    background-color: rgb(15, 183, 202, .8);
 }
 
 .navbar-nav li {
@@ -32,13 +33,59 @@ body {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-    color:#00b3ff;
+    color:#df0202;
 }
 
-.i.fas.fa-bars {
+.button.navbar-toggler {
     color: white;
+}
+.fa-bars::before {
+    color: #fff;
 }
 
 button:active, button:focus {
     outline: 0;
+}
+/* ===== ===== Landing Page Customization ===== =====*/
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background: #5f7b7e;
+    z-index: -1;
+}
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0); /*Makes sure that the content is centered in the viewport https://tympanus.net/codrops/2013/01/16/understanding-the-css-clip-property/  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-inner {
+    background-image: url(../images/cimpexp297landing.png);
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    transform: translateZ(0);/* Used for 3D Rendering this will keep it at a zero zoom level. */
+    -webkit-transform: translateZ(0); /* Used for 3D Rendering this will keep it at a zero zoom level. */
+    will-change: transform; /* It giving the webrowser a hint that we want it to display at a fixed position, so the browser doesn't try to impose it's own styling element*/
+}
+
+.caption {
+    z-index: 1;
+    top: 30%;
+}
+
+.btn {
+    border-width: medium;
+    padding: .5rem 1.3rem;
 }
