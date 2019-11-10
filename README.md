@@ -1,6 +1,6 @@
 # Code Institute Milestone Project Experience 297
 
-[![N|Solid](https://i.ibb.co/5MVRf7s/cimpreadme.png)]
+![N|Solid](https://i.ibb.co/5MVRf7s/cimpreadme.png)
 
 Where you're at work, on the road or at the beach, you can easily view what's in your immediate surrounding.
 
