@@ -1,0 +1,12 @@
+/*=====    =====*/
+
+/* This option is to make the view available to viewers using a non-rectangular displays for example iPhone X or >*/
+html {
+    padding: env(safe-area-inset);
+}
+
+/* Body Font Refrence https://fonts.google.com/?sort=popularity&selection.family=Montserrat*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #454a4e
+}
