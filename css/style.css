@@ -14,7 +14,7 @@ body {
 
 /* ===== ===== Start Navbar Effect, The Idea is to create a gradient Navbar that resembles the Logo and the overall Experience of the Aruban Colors ===== =====*/
 .navbar-brand img {
-    height: 2rem;
+    height: 3rem;
 }
 
 .navbar {
@@ -73,7 +73,7 @@ button:active, button:focus {
     height: 100%;
 }
 .home-inner {
-    background: url(../images/cimpexp297landing.png);
+    background: url(../images/landingpage/cimpexp297landing.png);
     position: fixed;
     display: table;
     top: 0;
@@ -261,6 +261,20 @@ i.fas.fa-tags {
 
 /* ===== ===== End Pricing Page Source Code ===== =====*/
 
+/* ===== ===== Start Revies Page Source Code ===== =====*/
+
+.card h5 {
+    color: #df0202;
+
+}
+
+.card p {
+    font-size: .9rem;
+}
+
+/* ===== ===== Start Revies Page Source Code ===== =====*/
+
+
 
 
 @media (max-width: 900px) {
@@ -311,6 +325,32 @@ i.fas.fa-tags {
     }
     .subtitle h3 {
         font-size: .9rem;
+    }
+}
+
+@media (max-width: 388px) {
+    .subtitle {
+        z-index: 1;
+        top: 40%;
+    }
+    .subtitle h1 {
+        font-size: 1.4rem;
+    }
+    .subtitle h3 {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .subtitle {
+        z-index: 1;
+        top: 40%;
+    }
+    .subtitle h1 {
+        font-size: 1.2rem;
+    }
+    .subtitle h3 {
+        font-size: .8rem;
     }
 }
 
