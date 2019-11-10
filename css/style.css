@@ -46,7 +46,8 @@ body {
 button:active, button:focus {
     outline: 0;
 }
-/* ===== ===== Landing Page Customization ===== =====*/
+
+/* ===== ===== Start Landing Page Customization ===== =====*/
 
 .landing {
     position: relative;
@@ -80,12 +81,76 @@ button:active, button:focus {
     will-change: transform; /* It giving the webrowser a hint that we want it to display at a fixed position, so the browser doesn't try to impose it's own styling element*/
 }
 
-.caption {
+.subtitle {
     z-index: 1;
-    top: 30%;
+    top: 40%;
+    font-size: 3.5rem;
 }
 
 .btn {
     border-width: medium;
     padding: .5rem 1.3rem;
 }
+
+@media (max-width: 900px) {
+    .subtitle {
+        z-index: 1;
+        top: 40%;
+    }
+    .subtitle h1 {
+        font-size: 2.1rem;
+    }
+    .subtitle h3 {
+        font-size: 1.6rem;
+    }
+
+@media (max-width: 768) {
+    .subtitle {
+        z-index: 1;
+        top: 40%;
+    }
+    .subtitle h1 {
+        font-size: 1.7rem;
+    }
+    .subtitle h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .subtitle {
+        z-index: 1;
+        top: 40%;
+    }
+    .subtitle h1 {
+        font-size: 1.5rem;
+    }
+    .subtitle h3 {
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .subtitle {
+        z-index: 1;
+        top: 40%;
+    }
+    .subtitle h1 {
+        font-size: 1.4rem;
+    }
+    .subtitle h3 {
+        font-size: .9rem;
+    }
+}
+
+
+
+
+}
+
+/* ===== ===== End Of Landing Page Customization ===== =====*/
+
+
+
+/* ===== ===== Start About Us Page Customization ===== =====*/
+
