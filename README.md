@@ -94,6 +94,7 @@ I searched different websited and sources on how to make the best approach. Afte
 * Configured Let's Encrypt to provide an SSL for the Domain experience297.org
 * Configured and Connected Netlify Domain to Deploy and Publish via Domain: https://www.experience297.org
 * Website & Domain is Live ready to be assessed by Code Institute Team.
+
 # Credits
 
 * Google Fonts: https://fonts.google.com
@@ -104,6 +105,7 @@ I searched different websited and sources on how to make the best approach. Afte
 * Pine Tools: https://pinetools.com
 * Pixlr Photo Editor: https://pixlr.com
 * Photo Resizer: https://www.photoresizer.com
+* jQuery: https://code.jquery.com/
 * W3Newbie Tutorials: https://w3newbie.com/w3newbie-tutorials/
 * W3School (HTML, CSS, and Bootstrap): https://www.w3schools.com/default.asp
 * Bootstrap 4 Responsive Pricing Table Snippet: https://startbootstrap.com/snippets/pricing-table/
