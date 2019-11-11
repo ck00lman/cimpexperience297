@@ -86,8 +86,14 @@ I searched different websited and sources on how to make the best approach. Afte
 
 
 # Deployment 
-
-
+* The Deployment Code has been directly pulled from the development/testing code on github. 
+* Git Repo was deployed on GitPages link: https://ck00lman.github.io/cimpexperience297/
+* Git Repo/Pages were hooked/connected on Netlify 
+* Nelify domain link: https://zen-euler-295b8c.netlify.com
+* Configured My Own Domain on GoDaddy (www.experience297.org) to point DNS to Netlify
+* Configured Let's Encrypt to provide an SSL for the Domain experience297.org
+* Configured and Connected Netlify Domain to Deploy and Publish via Domain: https://www.experience297.org
+* Website & Domain is Live ready to be assessed by Code Institute Team.
 # Credits
 
 * Google Fonts: https://fonts.google.com
