@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> <!--The Option of viewport-fit=cover is the option to make it compatible with iPhone with-->
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Experience 297 | Here, Near, Everywhere!</title>
-	<link rel="shorcut icon" href="images/favicon.ico">
+    <title>Experience 297 | Here, Near, Everywhere!</title>
+    <link rel="icon" href="images/favicon.ico">
 	<!-- Style.css -->
 	<link rel="stylesheet" href="css/style.css">
-	<!-- Bootstrap CSS as mentioned in the training modules -- > https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<!-- Bootstrap CSS as mentioned in the training modules https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Image Gallery Option With the Lightbox Effect from https://cdnjs.com/libraries/lightbox2 This Option Creates a great effect when creating -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
@@ -16,12 +16,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
-
 	<!-- Home Source Code Start -->
     <div id="home">
-
         <!-- This is the start of the Navigation-->
-        <nav class="navbar navbar-expand-md fixed-top font-weight-bold">
+        <nav class="navbar navbar-expand-md fixed-top">
             <a href="#" class="navbar-brand"><img src="images/logocimpexp297.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
@@ -32,10 +30,9 @@
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
                     <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
-                    <li class="nav-item"><a href="#signup" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
-            
         </nav>
         <!-- This is the end of the Navigation-->
 
@@ -51,7 +48,7 @@
         <div class="col-12 position-absolute text-center subtitle">
             <h1 class="text-light text-uppercase pb-2 pb-md-1">We Harmonized<br>Convenience & Experience</h1>
             <h3 class="text-light pb-2 pb-md-1">Simply Put..<br>We are Here, Near and Everywhere @ 297!</h3>
-            <a href="#about" class="btn btn-outline-light text-uppercase">Show Me More Info</a>
+            <a href="#about" class="btn btn-outline-light">Show Me More Info</a>
         </div>
         <!-- Landing Page Content Source Code Start-->
 
@@ -62,10 +59,10 @@
     <!-- About Source Code Start -->
     <div id="about" class="offset">
 
-        <!-- JumboTron Source Code Start-->
+        <!-- JumboTron Source Code Start Reference https://w3newbie.com/w3newbie-tutorials/-->
         <div class="jumbotron text-center pt-5 mb-0"> <!-- To Remove rems margin that is added to the JumboTron-->
-            <h2 class="text-uppercase font-weight-bold">About</h2>
-            <div class="heading-underline mx-auto my-4"></div>
+            <h2>About</h2>
+            <div class="heading-underline"></div>
 
             <!-- New Row-->
             <div class="row justify-content-center mt-5">
@@ -85,7 +82,7 @@
                         <p class="lead pt-3">Post or View the latest deals going on right now with our unique countdown feature or browse by refining your category of interest.</p>
                 </div>
             </div>
-            <!-- App Images Illustration Start -->
+            <!-- App Images Illustration Start Reference https://theapplaunchpad.com/mockup-generator/ USed-->
             <div>
                 <img src="images/about/exp297app.png" class="col-md-12" alt="">
             </div>
@@ -98,76 +95,86 @@
         
     </div>
 	<!-- About Source Code End -->
-
-
-	<!-- Subscription Price Source Code Start -- > Refrence https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_pricing_table-->
-    <div id="pricing">
-        <div class="container-fluid text-center py-5 mx-0">
-            <h2 class="text-uppercase font-weight bold">Pricing</h2>
-            <div class="heading-underline mx-auto my-4"></div>
-            <div class="columns">
-                    <ul class="price">
-                      <li class="header1">Here</li>
-                      <li class="grey">ƒ 49.99 p/m</li>
-                      <li><i class="fas fa-check"></i> Single Location</li>
-                      <li><i class="fas fa-check"></i> In-App Page</li>
-                      <li><i class="fas fa-check"></i> Media Content</li>
-                      <li><i class="fas fa-check"></i> Description of Products</li>
-                      <li><i class="fas fa-check"></i> Description of Services</li>
-                      <li><i class="fas fa-check"></i> Featured as "Nearby"</li>
-                      <li><i class="fas fa-check"></i> Receive Reviews</li>
-                      <li><i class="fas fa-check"></i> Post Deals</li>
-                      <li><i class="fas fa-asterisk"></i> Booking Integration</li>
-                      <li><i class="fas fa-asterisk"></i> Reservation Integration</li>
-                      <li><i class="fas fa-times"></i> Push Notifications</li>
-                      <li class="grey"><a href="#" class="button1">Sign Up!</a></li>
-                    </ul>
+    <section id="pricing" class="pricing text-center py-5">
+            <h2>Pricing</h2>
+            <div class="heading-underline"></div>
+            <div class="container">
+              <div class="row">
+                <!-- Near Flavor -->
+                <div class="col-lg-4">
+                  <div class="card mb-5 mb-lg-0">
+                    <div class="card-body">
+                      <h5 class="card-title text-muted text-uppercase text-center">Here</h5>
+                      <h6 class="card-price text-center">ƒ49<span class="period">/month</span></h6>
+                      <hr>
+                      <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Single Location</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>In-App Page</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Media Content</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Description Of Products</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Description Of Services</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Featured as "Nearby"</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Receive Reviews</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Post Dealst</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Booking Integration</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Reservation Integration</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Push Notifications</li>
+                      </ul>
+                      <a href="#contact" class="btn btn-block btn-warning text-uppercase">Sign Up</a>
+                    </div>
                   </div>
-                  
-                  <div class="columns">
-                    <ul class="price">
-                      <li class="header2">Near</li>
-                      <li class="grey">ƒ 99.99 p/m</li>
-                      <li><i class="fas fa-check"></i> Single Location</li>
-                      <li><i class="fas fa-check"></i> In-App Page</li>
-                      <li><i class="fas fa-check"></i> Media Content</li>
-                      <li><i class="fas fa-check"></i> Description of Products</li>
-                      <li><i class="fas fa-check"></i> Description of Services</li>
-                      <li><i class="fas fa-check"></i> Featured as "Nearby"</li>
-                      <li><i class="fas fa-check"></i> Receive Reviews</li>
-                      <li><i class="fas fa-check"></i> Post Deals</li>
-                      <li><i class="fas fa-check"></i> Booking Integration</li>
-                      <li><i class="fas fa-asterisk"></i> Reservation Integration</li>
-                      <li><i class="fas fa-asterisk"></i> Push Notifications</li>
-                      <li class="grey"><a href="#" class="button2">Sign Up!</a></li>
-                    </ul>
+                </div>
+                <!-- Near Flavor -->
+                <div class="col-lg-4">
+                  <div class="card mb-5 mb-lg-0">
+                    <div class="card-body">
+                      <h5 class="card-title text-muted text-uppercase text-center">Near</h5>
+                      <h6 class="card-price text-center">ƒ99<span class="period">/month</span></h6>
+                      <hr>
+                      <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Single Location</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>In-App Page</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Media Content</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Description Of Products</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Description Of Services</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Featured as "Nearby"</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Receive Reviews</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Post Dealst</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Booking Integration</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Reservation Integration</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Push Notifications</li>
+                      </ul>
+                      <a href="#contact" class="btn btn-block btn-warning text-uppercase">Sign Up</a>
+                    </div>
                   </div>
-                  
-                  <div class="columns">
-                    <ul class="price">
-                      <li class="header3">Everywhere</li>
-                      <li class="grey"> Contact Us For Pricing</li>
-                      <li><i class="fas fa-check"></i> Single Location</li>
-                      <li><i class="fas fa-check"></i> In-App Page</li>
-                      <li><i class="fas fa-check"></i> Media Content</li>
-                      <li><i class="fas fa-check"></i> Description of Products</li>
-                      <li><i class="fas fa-check"></i> Description of Services</li>
-                      <li><i class="fas fa-check"></i> Featured as "Nearby"</li>
-                      <li><i class="fas fa-check"></i> Receive Reviews</li>
-                      <li><i class="fas fa-check"></i> Post Deals</li>
-                      <li><i class="fas fa-check"></i> Booking Integration</li>
-                      <li><i class="fas fa-check"></i> Reservation Integration</li>
-                      <li><i class="fas fa-check"></i> Push Notifications</li>
-                      <li class="grey"><a href="#" class="button3">Contact Us</a></li>
-                    </ul>
+                </div>
+                <!-- Everywhere Flavor -->
+                <div class="col-lg-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title text-muted text-uppercase text-center">Everywhere</h5>
+                      <h6 class="card-price text-center">Contact Us</h6>
+                      <hr>
+                      <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Single Location</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>In-App Page</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Media Content</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Description Of Products</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Description Of Services</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Featured as "Nearby"</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Receive Reviews</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Post Dealst</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Booking Integration</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Reservation Integration</li>
+                        <li class="text-muted"><span class="fa-li"><i class="fas fa-asterisk"></i></span>Push Notifications</li>
+                      </ul>
+                      <a href="#contact" class="btn btn-block btn-warning text-uppercase"style="round">Contact Us For Pricing</a>
+                    </div>
                   </div>
-        </div>
-        <div class="container-fluid text-center py-5 mx-0">
-            <br>
-            <p class="col-sm-12 pt-3">
-                <i class="fas fa-check"></i><a>= Included</a>&nbsp;&nbsp;&nbsp;<i class="fas fa-asterisk"></i><a>= Additional Option</a>&nbsp;&nbsp;&nbsp;<i class="fas fa-times"></i><a>= Not Included</a>
-            </p>
-        </div>
+                </div>
+              </div>
+            </div>
+        </section>
         
         </div>
 	<!-- Subscription Price Source Code End -->
@@ -176,17 +183,17 @@
 	<!-- Reviews Source Code Start -->
     <div id="reviews">
 
-        <!-- Jumbotron Source Code Start-->
+        <!-- Jumbotron Source Code Start reference https://w3newbie.com/w3newbie-tutorials/-->
         <div class="jumbotron text-center pb-5 mb-0">
-            <h2 class="text-uppercase font-weight-bold">Testimonials</h2>
-            <div class="heading-underline mx-auto my-4"></div>
+            <h2>Testimonials</h2>
+            <div class="heading-underline"></div>
 
             <div class="row justify-content-center">
                 <div class="col-11 col-sm-10">
                     <div class="row pt-3">
 
                         <div class="col-md-6 pb-5">
-                            <!-- Bootstrap Card Reference -- > https://getbootstrap.com/docs/4.0/components/card/ -->
+                            <!-- Bootstrap Card Reference https://getbootstrap.com/docs/4.0/components/card/ -->
                             <div class="card mx-sm-2 mx-lg-4 mx-xl-5">
                                 <img src="images/reviews/profilepic1.png" alt="" class="card-img-top">
                                 <div class="card-body">
@@ -198,7 +205,7 @@
                         </div>
 
                         <div class="col-md-6 pb-5">
-                                <!-- Bootstrap Card Reference -- > https://getbootstrap.com/docs/4.0/components/card/ -->
+                                <!-- Bootstrap Card Reference https://getbootstrap.com/docs/4.0/components/card/ -->
                                 <div class="card mx-sm-2 mx-lg-4 mx-xl-5">
                                     <img src="images/reviews/profilepic2.png" alt="" class="card-img-top">
                                     <div class="card-body">
@@ -222,15 +229,39 @@
 	<!-- Reviews Source Code End -->
 
 
-	<!-- Contact Source Code Start -->
-    <div id="signup">
+	<!-- Contact Us Source Code Start https://w3newbie.com/w3newbie-tutorials/ -->
+    <div id="contact">
+        <div class="container-fluid footer">
+            <div class="row text-light pt-4 pb-5 px-2 px-md-5">
+                <div class="col-md-12 text-center pt-4">
+                    <img src="images/logocimpexp297.png" alt="" class="my-4">
+                    <p>We believe that everyone is entitled to a Great Exprience, whether your a business owner or an end-user.</p>
+                    <br>
+                    <br>
+                    <h4><strong>We Are Located At</strong></h4>
+                    <p>Gonzalitostraat<br>Oranjestad, Aruba</p>
+                    <br>
+                    <br>
+                    <h4><strong>Contact Info</strong></h4>
+                    <p>
+                        <i class="fas fa-mobile-alt fa-lg pt-3"></i><br><a href="tel:+2975921000" style="color:white"> +2975921000</a><br>
+                        <i class="fas fa-paper-plane fa-lg pt-3"></i><br><a href="mailto:info@experience297.com" style="color:white"> info@experience297.com</a>
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <p> All © Rights Reserved To Experience 297</p>
+                </div>
+            </div> <!-- This is the End of the Row-->
+        </div> <!-- This is the end of the footer container-->
+        <!-- -->
 
     </div>
-	<!-- Contact Source Code End -->
+	<!-- Contact Us Source Code End -->
 
 
 	<!-- Script Source Files -->
-
+    
     <!-- jQuery https://code.jquery.com/ -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
@@ -244,9 +275,6 @@
     <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-	
-	<!-- End of Script Source Files -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script><!-- End of Script Source Files -->
 </body>
 </html>

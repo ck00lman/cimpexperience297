@@ -1,17 +1,15 @@
 /*===== EXPERIENCE 297 WEBSITE CSS =====*/
 
-
-/* This option is to make the view available to viewers using a non-rectangular displays for example iPhone X or >*/
+/* ===== Body Font ===== Refrence -- > https://fonts.google.com/?sort=popularity&selection.family=Montserrat*/
 html {
     padding: env(safe-area-inset);
 }
 
-/* ===== Body Font ===== Refrence -- > https://fonts.google.com/?sort=popularity&selection.family=Montserrat*/
 body {
     font-family: 'Montserrat', sans-serif;
     color: #353838
 }
-
+/* Refrenced Source Code from https://w3newbie.com/w3newbie-tutorials/*/
 /* ===== ===== Start Navbar Effect, The Idea is to create a gradient Navbar that resembles the Logo and the overall Experience of the Aruban Colors ===== =====*/
 .navbar-brand img {
     height: 3rem;
@@ -21,6 +19,8 @@ body {
     padding: .6rem 1rem;
     letter-spacing: .05rem;
     font-size:.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
     background: -moz-linear-gradient(left, #0fb7ca 32%, #FBB03B 82%); 
     background: -webkit-linear-gradient(left, #0fb7ca 32%, #FBB03B 82%);
     background: linear-gradient(to right, #0fb7ca 32%, #FBB03B 82%);
@@ -84,32 +84,36 @@ button:active, button:focus {
     background-position: center center;
     transform: translateZ(0);/* Used for 3D Rendering this will keep it at a zero zoom level. */
     -webkit-transform: translateZ(0); /* Used for 3D Rendering this will keep it at a zero zoom level. */
-    will-change: transform; /* It giving the webrowser a hint that we want it to display at a fixed position, so the browser doesn't try to impose it's own styling element*/
+    will-change: transform; /* Its giving the webrowser a hint that we want it to display at a fixed position, so the browser doesn't try to enforce it's own styling element*/
 }
 
 .subtitle {
     z-index: 1;
-    top: 40%;
+    top: 50%;
     font-size: 3.5rem;
+    
 }
 
 .btn {
     border-width: medium;
     padding: .5rem 1.3rem;
+    text-transform: uppercase;
+    border-radius: 25px;
 }
-
-/* ===== ===== Padding Top for Display ===== =====*/
 
 /* ===== ===== Scroll Spy Offest Effect Option ===== =====*/
 
-h2.text-uppercase.font-weight-bold {
-    margin-top: 3.5rem;
-}
+/* ===== ===== Padding Top for Display ===== =====*/
+h2 {
+    margin-top: 3.5rem!important;
+    text-transform: uppercase;
+}/* Added this line of code in order for scrolling href to lock precisely on location*/
 
 .heading-underline {
     width: 3rem;
     height: .25rem;
     background: #df0202;
+    margin: 1.5rem auto;
 }
 
 /* ===== ===== Scroll Spy Offest Effect Option ===== =====*/
@@ -118,150 +122,87 @@ h2.text-uppercase.font-weight-bold {
 
 i.fas.fa-map-marker-alt {
     color: #b90000!important;
-
 }
 
 i.fas.fa-map-marked-alt {
     color: #f7ad23!important;
-
 }
 
 i.fas.fa-tags {
     color: #55c0bb!important;
-
 }
 
 /* ===== ===== End About Page Fontawesome Icon Color ===== =====*/
 
-/* ===== ===== Start Pricing Page Source Code ===== =====*/
-
-* {
-    box-sizing: border-box;
-    padding-bottom: 0px;
-  }
-  .jumbotron {
-    padding-right: 2rem;
-    padding-bottom: 0rem;
-  }
-
-  .h2, h2 {
-      margin-top: 3.5rem!important; /* Specification of exact screen position*/
-  }
-
-  .columns {
-    float: left;
-    width: 33.3%;
-    padding: 8px;
+/* ===== ===== Start Pricing Page Source Code Refrence from https://startbootstrap.com/snippets/pricing-table/ ===== =====*/
+section.pricing {
+    background: #ffffff;
   }
   
-  .price {
-    list-style-type: none;
-    border: 1px solid #eee;
+  .pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  .pricing hr {
+    margin: 1.5rem 0;
+  }
+  
+  .pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+  }
+  
+  .pricing .card-price {
+    font-size: 3rem;
     margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    color: #0fb7ca;
   }
   
-  .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  .pricing .card-price .period {
+    font-size: 0.8rem;
   }
   
-  .price .header1 {
-    background-color: #0fb7ca;
-    color: white;
-    font-size: 25px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-
-  .price .header2 {
-    background: -moz-linear-gradient(left, #0fb7ca 42%, #FBB03B 82%); 
-    background: -webkit-linear-gradient(left, #0fb7ca 42%, #FBB03B 82%);
-    background: linear-gradient(to right, #0fb7ca 42%, #FBB03B 82%);
-    color: white;
-    font-size: 25px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-
-  .price .header3 {
-    background-color: #FBB03B;
-    color: white;
-    font-size: 25px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  .pricing ul li {
+    margin-bottom: 1rem;
   }
   
-  .price li {
-    border-bottom: 1px solid #eee;
-    padding: 10px;
-    text-align: center;
+  .pricing .text-muted {
+    opacity: 0.7;
   }
   
-  .price .grey {
-    background-color: #eee;
-    font-size: 20px;
+  .pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+    
   }
   
-  .button1 {
-    background-color: #0fb7ca;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-  }
-
-  .button2 {
-    background: -moz-linear-gradient(left, #0fb7ca 32%, #FBB03B 82%); 
-    background: -webkit-linear-gradient(left, #0fb7ca 32%, #FBB03B 82%);
-    background: linear-gradient(to right, #0fb7ca 32%, #FBB03B 82%);
-    border: none;
-    border-radius: 25px;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-  }
-
-  .button3 {
-    background-color: #FBB03B;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-  }
-
-  .fas.fa-check {
-      color: #04b12f;
-  }
-
-  .fas.fa-asterisk {
-    color: #FBB03B;
-}
-
-.fas.fa-times {
-    color: #df0202;
-}
-
-
+  /* ===== ===== Hover Effects on Card ===== ===== */
   
-  @media only screen and (max-width: 600px) {
-    .columns {
-      width: 100%;
+  @media (min-width: 1280px) {
+    .pricing .card:hover {
+      margin-top: -.25rem;
+      margin-bottom: .25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .pricing .card:hover .btn {
+      opacity: 1;
     }
   }
 
 /* ===== ===== End Pricing Page Source Code ===== =====*/
 
-/* ===== ===== Start Revies Page Source Code ===== =====*/
+
+/* ===== ===== Start Reviews Page Source Code Bootstrap Card Reference https://getbootstrap.com/docs/4.0/components/card/===== =====*/
 
 .card h5 {
     color: #df0202;
@@ -272,11 +213,21 @@ i.fas.fa-tags {
     font-size: .9rem;
 }
 
-/* ===== ===== Start Revies Page Source Code ===== =====*/
+/* ===== ===== End Reviews Page Source Code  ===== =====*/
 
+/* ===== ===== Start Footer Page Source Code Refrenced Source Code from https://w3newbie.com/w3newbie-tutorials/===== =====*/
 
+img.my-4 {
+    height: 5rem;
+}
 
+.footer {
+    background-color: #0fb7ca;
+}
 
+/* ===== ===== End Footer Page Source Code ===== =====*/
+
+/* ===== =====  Added Media Queries Reference from https://stackoverflow.com/  ===== ===== */
 @media (max-width: 900px) {
     .subtitle {
         z-index: 1;
@@ -289,7 +240,7 @@ i.fas.fa-tags {
         font-size: 1.6rem;
     }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
     .subtitle {
         z-index: 1;
         top: 40%;
@@ -353,13 +304,4 @@ i.fas.fa-tags {
         font-size: .8rem;
     }
 }
-
-
-
-
-/* ===== ===== End Of Landing Page Customization ===== =====*/
-
-
-
-/* ===== ===== Start About Us Page Customization ===== =====*/
-
+}
