@@ -184,6 +184,11 @@ i.fas.fa-tags {
     color: #55c0bb!important;
 }
 
+.illustration img {
+	height: 75%;
+	width: 75%;
+}
+
 /* ===== ===== End About Page Fontawesome Icon Color ===== =====*/
 
 /* ===== ===== Start Pricing Page Source Code Refrence from https://startbootstrap.com/snippets/pricing-table/ ===== =====*/
