@@ -306,12 +306,56 @@ ul {
 /* ===== ===== Start Footer Page Source Code Refrenced Source Code from https://w3newbie.com/w3newbie-tutorials/===== =====*/
 
 img.my-4 {
-    height: 5rem;
+    height: 10rem;
 }
 
 .footer {
-    background-color: #0fb7ca;
+    background: linear-gradient(to right, #0fb7ca 32%, #FBB03B 82%);
 }
+
+.footer h2 {
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.heading-underline1 {
+	width: 3rem;
+	height: .25rem;
+	background: #df0202;
+	margin: 1.5rem auto;
+}
+
+/* ===== ===== Set the size of the div element that contains the map ===== =====*/
+
+#map {
+	height: 425px;
+	/* ===== ===== The height is 400 pixels ===== ===== */
+	width: 100%;
+	/* ===== ===== The width is the width of the web page ===== ===== */
+}
+
+.address {
+	font-weight: 200 !important;
+}
+
+.phone {
+	margin-top: 10px;
+}
+
+.mail {
+	margin-top: 10px;
+}
+
+.facebook {
+	margin-top: 10px;
+}
+
+.copyright {
+	color: white;
+	text-align: center;
+}
+
 
 /* ===== ===== End Footer Page Source Code ===== =====*/
 
