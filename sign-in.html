@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="animate__animated animate__fadeIn animate__delay-.5s">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+      <!--The Option of viewport-fit=cover is the option to make it compatible with iPhone with-->
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Experience 297 | Here, Near, Everywhere!</title>
+      <link rel="icon" href="images/favicon.ico">
+      <!-- Style.css -->
+      <link rel="stylesheet" href="css/signin.css">
+      <!-- Bootstrap CSS as mentioned in the training modules https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Image Gallery Option With the Lightbox Effect from https://cdnjs.com/libraries/lightbox2 This Option Creates a great effect when creating -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+      <!-- Google Montserrat Font Using A Different Type Of Font To See How It Looks  https://fonts.google.com/ -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+      <!-- Animate Page Transition-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+      <script type="text/javascript">
+         (function(){
+             emailjs.init("user_muVrpQwSuuCAgQ1AkWgHB");
+         })();
+      </script>
+   </head>
+   <body data-spy="scroll" data-target="#navbarResponsive">
+      <!-- Home Source Code Start Acknowledgement to True Coder: https://youtu.be/t-EMinSz_Tk-->
+      <section>
+         <nav class="navbar navbar-expand-md fixed-top">
+            <a href="index.html" class="navbar-brand"><img src="images/logocimpexp297.png" alt="Logo of Experience 297 Location Icon"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home Page</a></li>
+               </ul>
+            </div>
+         </nav>
+         <div class="container">
+            <div class="img">
+               <img src="images/form/iphones.png" alt="dual iphones">
+            </div>
+            <div class="login-content">
+               <form id="signInForm" action="/" method="GET">
+                  <img src="images/about/logo-transparent.png" alt="Experince 297 Logo">
+                  <h2 class="title">Welcome Back</h2>
+                  <div class="input-div one">
+                     <div class="i">
+                        <i class="fas fa-at"></i>
+                     </div>
+                     <div class="div">
+                        <input type="text" class="form-control" placeholder="Email" name="email" required>
+                     </div>
+                  </div>
+                  <div class="input-div pass">
+                     <div class="i"> 
+                        <i class="fas fa-lock"></i>
+                     </div>
+                     <div class="div">
+                        <input type="password" class="form-control" placeholder="Password" name="password" required>
+                     </div>
+                  </div>
+                  <a href="#">Forgot Password?</a>
+                  <input type="submit" class="btn" target="_blank" value="Sign In" id="btn">
+                  <a href="sign-up.html"><i class="signup fas fa-sign-in-alt"></i> Want To Join? Sign-Up!</a>
+               </form>
+            </div>
+         </div>
+      </section>
+      <!-- Kommunicate ChatBot Integration -->
+      <script type="text/javascript">
+         /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+         (function(d, m){
+           var kommunicateSettings = {"appId":"11a9a47e6b3e2e1c8f3ac0e9bfad98c7","popupWidget":true,"automaticChatOpenOnNavigation":true};
+           var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+           s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+           var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+           window.kommunicate = m; m._globals = kommunicateSettings;
+         })(document, window.kommunicate || {});
+      </script>
+      <!-- SignIn code to validate email and password -->
+      <script src="js/signIn.js"></script>
+      <!-- Font Awesome Kit-->
+      <script src="https://kit.fontawesome.com/6c3e41b829.js" crossorigin="anonymous"></script>
+      <!-- jQuery W3Schools CDN lInk https://www.w3schools.com/jquery/jquery_get_started.asp -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+      <!-- Plugins.js -->
+      <script src="js/validation.js"></script>
+      <!-- End of Script Source Files -->
+   </body>
+</html>
