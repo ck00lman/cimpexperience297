@@ -99,6 +99,28 @@ button:active, button:focus {
 }
 
 /* ===== ===== Landing Page Button Of Effect ===== ===== */
+.subtitle {
+	z-index: 1;
+	top: 50%;
+	font-size: 3.5rem;
+}
+
+.subtitle img {
+	height: 150px;
+	width: 150px;
+	transform: translateY(-225px);
+}
+
+.subtitle h1 {
+	font-size: 3rem;
+	transform: translateY(-175px);
+}
+
+.subtitle h3 {
+	font-size: 2rem;
+	font-weight: 200 !important;
+	transform: translateY(-175px);
+}
 
 .btn {
     border-width: medium;
@@ -384,78 +406,73 @@ img.my-4 {
 	img.my-4 {
 		height: 9rem;
 	}
-
-@media (max-width: 768px) {
-    .subtitle {
-        z-index: 1;
-        top: 40%;
+    @media (max-width: 768px) {
+        .subtitle {
+            z-index: 1;
+            top: 40%;
+        }
+        .subtitle h1 {
+            font-size: 2.0rem;
+        }
+        .subtitle h3 {
+            font-size: 1.4rem;
+        }
+        img.my-4 {
+            height: 7rem;
+        }
     }
-    .subtitle h1 {
-        font-size: 2.0rem;
+    @media (max-width: 600px) {
+        .subtitle {
+            z-index: 1;
+            top: 40%;
+        }
+        .subtitle h1 {
+            font-size: 1.8rem;
+        }
+        .subtitle h3 {
+            font-size: 1.3rem;
+        }
+        img.my-4 {
+            height: 6rem;
+        }
     }
-    .subtitle h3 {
-        font-size: 1.4rem;
+    @media (max-width: 480px) {
+        .subtitle {
+            z-index: 1;
+            top: 40%;
+        }
+        .subtitle h1 {
+            font-size: 1.6rem;
+        }
+        .subtitle h3 {
+            font-size: 1.2rem;
+            font-weight: 200 !important;
+        }
     }
-    img.my-4 {
-        height: 7rem;
+    @media (max-width: 388px) {
+        .subtitle {
+            z-index: 1;
+            top: 40%;
+        }
+        .subtitle h1 {
+            font-size: 1.4rem;
+        }
+        .subtitle h3 {
+            font-size: 1.1rem;
+            font-weight: 200 !important;
+        }
     }
-}
-
-@media (max-width: 600px) {
-    .subtitle {
-        z-index: 1;
-        top: 40%;
+    @media (max-width: 320px) {
+        .subtitle {
+            z-index: 1;
+            top: 40%;
+        }
+        .subtitle h1 {
+            font-size: 1.2rem;
+        }
+        .subtitle h3 {
+            font-size: 1rem;
+            font-weight: 200 !important;
+        }
     }
-    .subtitle h1 {
-        font-size: 1.8rem;
-    }
-    .subtitle h3 {
-        font-size: 1.3rem;
-    }
-    img.my-4 {
-        height: 6rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .subtitle {
-        z-index: 1;
-        top: 40%;
-    }
-    .subtitle h1 {
-        font-size: 1.6rem;
-    }
-    .subtitle h3 {
-        font-size: 1.2rem;
-        font-weight: 200 !important;
-    }
-}
-
-@media (max-width: 388px) {
-    .subtitle {
-        z-index: 1;
-        top: 40%;
-    }
-    .subtitle h1 {
-        font-size: 1.4rem;
-    }
-    .subtitle h3 {
-        font-size: 1.1rem;
-        font-weight: 200 !important;
-    }
-}
-
-@media (max-width: 320px) {
-    .subtitle {
-        z-index: 1;
-        top: 40%;
-    }
-    .subtitle h1 {
-        font-size: 1.2rem;
-    }
-    .subtitle h3 {
-        font-size: 1rem;
-        font-weight: 200 !important;
-    }
-}
 }
