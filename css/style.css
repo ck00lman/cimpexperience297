@@ -290,12 +290,25 @@ img.my-4 {
         z-index: 1;
         top: 40%;
     }
+    .subtitle img {
+		height: 125px;
+		width: 125px;
+		transform: translateY(-25px);
+	}
     .subtitle h1 {
         font-size: 2.3rem;
+        transform: translateY(10px);
     }
     .subtitle h3 {
         font-size: 1.6rem;
+        transform: translateY(10px);
     }
+    .btn {
+		transform: translateY(10px);
+	}
+	img.my-4 {
+		height: 9rem;
+	}
 
 @media (max-width: 768px) {
     .subtitle {
@@ -306,7 +319,10 @@ img.my-4 {
         font-size: 2.0rem;
     }
     .subtitle h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+    img.my-4 {
+        height: 7rem;
     }
 }
 
@@ -319,7 +335,10 @@ img.my-4 {
         font-size: 1.8rem;
     }
     .subtitle h3 {
-        font-size: 1.0rem;
+        font-size: 1.3rem;
+    }
+    img.my-4 {
+        height: 6rem;
     }
 }
 
@@ -332,7 +351,8 @@ img.my-4 {
         font-size: 1.6rem;
     }
     .subtitle h3 {
-        font-size: .9rem;
+        font-size: 1.2rem;
+        font-weight: 200 !important;
     }
 }
 
@@ -345,7 +365,8 @@ img.my-4 {
         font-size: 1.4rem;
     }
     .subtitle h3 {
-        font-size: .9rem;
+        font-size: 1.1rem;
+        font-weight: 200 !important;
     }
 }
 
@@ -358,7 +379,8 @@ img.my-4 {
         font-size: 1.2rem;
     }
     .subtitle h3 {
-        font-size: .8rem;
+        font-size: 1rem;
+        font-weight: 200 !important;
     }
 }
 }
