@@ -236,6 +236,17 @@
         </section>
         <!-- Contact Us Source Code End -->
         <!-- Script Source Files Refrenced in README.md "Credits"-->
+        <!-- Kommunicate ChatBot Integration -->
+        <script type="text/javascript">
+            /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+            (function(d, m){
+            var kommunicateSettings = {"appId":"11a9a47e6b3e2e1c8f3ac0e9bfad98c7","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+            })(document, window.kommunicate || {});
+        </script>
         <script> // Code Reference Video https://www.youtube.com/watch?v=V9CY0F4Wc7M by dcode
             window.addEventListener('scroll', () => {
                 const scrollable  = document.documentElement.scrollHeight - window.innerHeight;
