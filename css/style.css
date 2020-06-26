@@ -191,86 +191,117 @@ i.fas.fa-tags {
 
 /* ===== ===== End About Page Fontawesome Icon Color ===== =====*/
 
-/* ===== ===== Start Pricing Page Source Code Refrence from https://startbootstrap.com/snippets/pricing-table/ ===== =====*/
+/* ===== ===== Start Pricing Page Source Code Refrence from https://www.darkcode.info/  ===== =====*/
 section.pricing {
     background: #ffffff;
   }
   
-  .pricing .card {
-    border: none;
-    border-radius: 1rem;
-    transition: all 0.2s;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.24);
-  }
-  
-  .pricing hr {
-    margin: 1.5rem 0;
-  }
-  
-  .pricing .card-title {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-  }
-  
-  .pricing .card-price {
-    font-size: 3rem;
-    margin: 0;
-    color: #0fb7ca;
-  }
-  
-  .pricing .card-price .period {
-    font-size: 0.8rem;
-  }
-  
-  .pricing ul li {
-    margin-bottom: 1rem;
-  }
-  
-  .pricing .text-muted {
-    opacity: 0.7;
-  }
-  
-  .pricing .btn {
-    font-size: 80%;
-    border-radius: 5rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    padding: 1rem;
-    opacity: 0.7;
-    transition: all 0.2s;
-    
-  }
-  
-  /* ===== ===== Hover Effects on Card ===== ===== */
-  
-  @media (min-width: 1280px) {
-    .pricing .card:hover {
-      margin-top: -.25rem;
-      margin-bottom: .25rem;
-      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-    }
-    .pricing .card:hover .btn {
-      opacity: 1;
-    }
-  }
+  .pricing-table {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: min(1600px, 100%);
+	margin: auto;
+}
+
+.pricing-card {
+	flex: 1;
+	max-width: 360px;
+	background-color: #fff;
+	margin: 20px 10px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	color: #2d2d2d;
+	transition: .3s linear;
+	box-shadow: 5px 5px 5px 5px lightgray !important;
+	border-radius: 25px;
+	border: 1px solid;
+	border-color: lightgray;
+}
+
+.pricing-card:hover {
+	border-color: #0fb7ca;
+}
+
+.pricing-card-header {
+	background-color: #FBB03B;
+	display: inline-block;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 0 0 20px 20px;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 300;
+	transition: .4s linear;
+	box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
+.pricing-card:hover .pricing-card-header {
+	box-shadow: 0 0 0 26em #0fb7ca;
+	transition: .5s ease-in-out;
+}
+
+.price {
+	font-size: 60px;
+	color: #0fb7ca;
+	margin: 20px 0;
+	transition: .2s linear;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px lightgray !important;
+}
+
+.price sup,
+.price span {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.pricing-card:hover,
+.pricing-card:hover .price {
+	color: #fff;
+}
+
+.pricing-card li {
+	font-size: 16px;
+	padding: 2px 0;
+	text-transform: uppercase;
+	list-style-type: none;
+	text-align: center;
+}
+
+ul {
+	padding-inline-start: 10px !important;/* Importance Defined at https://developer.mozilla.org/en-US/docs/Web/CSS/padding-inline-start*/
+	
+}
+
+.signup-btn {
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	border: 2px solid #0fb7ca;
+	color: #0fb7ca;
+	padding: 18px 40px;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: .3s linear;
+}
+
+.signup-btn:hover {
+	background-color: #fff;
+	border-color: #fff;
+	color: #0fbcf9;
+}
+
+@media screen and (max-width:1100px) {
+	.pricing-card {
+		flex: 50%;
+	}
+}
 
 /* ===== ===== End Pricing Page Source Code ===== =====*/
 
-
-/* ===== ===== Start Reviews Page Source Code Bootstrap Card Reference https://getbootstrap.com/docs/4.0/components/card/===== =====*/
-
-.card h5 {
-    color: #df0202;
-
-}
-
-.card p {
-    font-size: .9rem;
-}
-
-/* ===== ===== End Reviews Page Source Code  ===== =====*/
 
 /* ===== ===== Start Footer Page Source Code Refrenced Source Code from https://w3newbie.com/w3newbie-tutorials/===== =====*/
 
