@@ -236,6 +236,30 @@
         </section>
         <!-- Contact Us Source Code End -->
         <!-- Script Source Files Refrenced in README.md "Credits"-->
+        <!-- Google Maps API & Integration-->
+        <script>
+            var marker;
+            
+                function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: {lat: 12.494197, lng: -70.009586},
+                    zoomControl: false, //disable functionality
+                    mapTypeControl: false,//disable functionality
+                    scaleControl: false,//disable functionality
+                    streetViewControl: false,//disable functionality
+                    rotateControl: false,//disable functionality
+                    fullscreenControl: false//disable functionality
+                });
+            
+                marker = new google.maps.Marker({
+                    map: map,
+                    draggable: true,
+                    animation: google.maps.Animation.DROP,
+                    position: {lat: 12.494197, lng: -70.009586}
+                });
+            }
+        </script>
         <!-- Navbar Class Transition I -->
         <script src="js/transition.js"></script>
         <!-- Google Maps JavaScript API -->
